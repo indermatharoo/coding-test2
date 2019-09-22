@@ -26,16 +26,21 @@ function fetchData(category) {
         .then(res => res.json())
         .then(body => {
             let next = body.next;
-            body.objects.forEach(function(product){
+            let products = body.objects;
+
+            // Looping the fetched data
+            products.forEach(function(product){
+                // check if product category matches with given category
                 if(category.toLowerCase() == product.category.toLowerCase())
                     products.push(new Product(product));
             });
+            // fetch the paginated data.
             if(next != null)
-                fetchProducts(next, resolve, reject);
+                fetchProducts(next, resolve, reject); // call the function recursively
             else
-                resolve(products);
+                resolve(products); // eventually return response.
         })
-        .catch(err => reject(err))
+        .catch(err => reject(err)) // catch if any error occurred during processs
         ;
     }
 

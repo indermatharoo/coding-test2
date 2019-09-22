@@ -33,8 +33,8 @@ standardConverstion  - set standard cublic convertion here(default value is alre
 
 * [React](https://reactjs.org/)
 * [Node](https://nodejs.org/en/)
-* [Npm](https://www.npmjs.com/package/commander/)
-* [Npm](https://www.npmjs.com/package/dotenv/)
-* [Npm](https://www.npmjs.com/package/node-fetch/)
-* [Npm](https://www.npmjs.com/package/promise/)
+* [Commander](https://www.npmjs.com/package/commander/)
+* [Dotenv](https://www.npmjs.com/package/dotenv/)
+* [Node Fetch](https://www.npmjs.com/package/node-fetch/)
+* [Promise](https://www.npmjs.com/package/promise/)
 
