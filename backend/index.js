@@ -13,11 +13,10 @@ program
 // Defining commands
 program
     .command('averageWeight <category>')
-    .alias('a')
     .description('Calculate average weight')
     .action(async category => {
         let products    = await service.fetchData(category);  // fetch products from api.
-        let totalWeight = 0;
+        let totalWeight = 0; //Initialize total weight
 
         // calculate total weight
         products.forEach(function(product){
@@ -26,6 +25,8 @@ program
         });
 
         totalWeight /= products.length; // calculating average cubic weight
+        
+        // Print the final result (Average cubic weight)
         console.log('The average average cubic weight of ' + category + " is = " + totalWeight.toFixed(2) + "Kg");
     })
     ;

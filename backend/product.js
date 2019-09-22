@@ -10,14 +10,14 @@ class Product {
      * @param {product} containes product data.
      * @return void.
      */
-    constructor(project) {
-        this.category    = project.category;
-        this.title       = project.title;
-        this.weight      = project.weight;
+    constructor(product) {
+        this.category    = product.category;
+        this.title       = product.title;
+        this.weight      = product.weight;
         this.size        = {}
-        this.size.width  = project.size.width;
-        this.size.length = project.size.length;
-        this.size.height = project.size.height;
+        this.size.width  = product.size.width;
+        this.size.length = product.size.length;
+        this.size.height = product.size.height;
         this.averageCubicWeight = 0;
     }
 

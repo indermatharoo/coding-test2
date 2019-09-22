@@ -31,17 +31,16 @@ function fetchData(category) {
             // Looping the fetched data
             tmpProducts.forEach(function(product){
                 // check if product category matches with given category
-                if(category.toLowerCase() == product.category.toLowerCase())
+                if(category.toLowerCase() === product.category.toLowerCase())
                     products.push(new Product(product));
             });
             // fetch the paginated data.
-            if(next != null)
+            if(next !== null)
                 fetchProducts(next, resolve, reject); // call the function recursively
             else
                 resolve(products); // eventually return response.
         })
-        .catch(err => reject(err)) // catch if any error occurred during processs
-        ;
+        .catch(err => reject(err)); // catch if any error occurred during processs
     }
 
     // return a promise

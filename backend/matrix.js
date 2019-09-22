@@ -19,15 +19,15 @@ class martix {
         this.length = product.size.length;
         this.width  = product.size.width;
         this.result = 0;
-        this.init();
-        this.calculate();
+        this.convertCentimeterIntoMeter();
+        this.getIndustryStandardCubicWeight();
     }
     
     /**
      * Convert centemeters into meters.
      * @return void.
      */
-    init() {
+    convertCentimeterIntoMeter() {
         this.height = this.height / 100;
         this.length = this.length / 100
         this.width  = this.width  / 100
@@ -35,9 +35,10 @@ class martix {
 
     /**
      * Calculate average standart weight.
+     * length * height * width * (industry standard cubic weight conversion factor)
      * @return void.
      */
-    calculate() {
+    getIndustryStandardCubicWeight() {
         this.result = this.height * this.length * this.width * parsed.standardConversion;
     }
 
