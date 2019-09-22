@@ -19,7 +19,7 @@ What things you need to install the software and how to install them
 * Install [Docker](https://docs.docker.com/get-started/)
 * Build: `docker-compose build`
 * Run: `docker-compose up`
-* Run: `docker-compose exec node-backend node shipping averageWeight "Air Conditioners"`
+* Run: `docker-compose exec node-backend node index averageWeight "Air Conditioners"`
 
 
 #### Environment Variables 
