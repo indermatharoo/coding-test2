@@ -38,7 +38,7 @@ class martix {
      * @return void.
      */
     calculate() {
-        this.result = this.height * this.length * this.width * parsed.standardConversation;
+        this.result = this.height * this.length * this.width * parsed.standardConversion;
     }
 
 }

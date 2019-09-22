@@ -2,6 +2,9 @@
 
 A command line application which calculate average cubic weight of the products of specific categories. 
 
+## Language Used
+Node.js
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -26,7 +29,7 @@ The following environment variables need to be set up on the system.
 - .env
 ```
 apiUrl - set api url here(default value is already assigned).
-standardConverstion  - set standard cublic convertion here(default value is already assigned)
+standardConversion  - set standard cublic conversion here(default value is already assigned)
 ```
 
 ## Resources
