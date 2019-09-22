@@ -26,10 +26,10 @@ function fetchData(category) {
         .then(res => res.json())
         .then(body => {
             let next = body.next;
-            let products = body.objects;
+            let tmpProducts = body.objects;
 
             // Looping the fetched data
-            products.forEach(function(product){
+            tmpProducts.forEach(function(product){
                 // check if product category matches with given category
                 if(category.toLowerCase() == product.category.toLowerCase())
                     products.push(new Product(product));
