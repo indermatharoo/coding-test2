@@ -39,7 +39,7 @@ class martix {
      * @return void.
      */
     getIndustryStandardCubicWeight() {
-        this.result = this.height * this.length * this.width * parsed.standardConversion;
+        this.result = this.length * this.height * this.width * parsed.standardConversion;
     }
 
 }
